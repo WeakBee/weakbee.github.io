@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 body{
 	padding: 0;
 	margin: 0;
-	background-color: #FAFBFD;
-	font-family: 'Rubik';
+	background-color: #212121;
+	color: white;
+	font-family: "Montserrat", sans-serif;
 }
 header{
 	height: 700px;
@@ -14,7 +16,7 @@ header{
 	right: 0;
 	top: 0px;
 	z-index: 0;
-	background: #EC5863;
+	background: #00ffbb;
 	border-radius: 40px 0px 0px 40px;
 }
 nav{
@@ -27,9 +29,8 @@ nav{
 }
 .nav_links a,
 .cta {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: white;
   text-decoration: none;
 }
 
@@ -47,13 +48,13 @@ nav{
 }
 
 .nav_links li a:hover {
-  color: #0088a9;
+  color: #00ffbb;
 }
 
 .cta {
 	padding: 9px 25px;
-	background-color: #4285F4;
-	color: #FCFDFE;
+	background-color: #00ffbb;
+	color: #212121;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
@@ -68,48 +69,53 @@ nav{
 	height: 700px;
 	margin: 0;
 	display: flex;
-	color: rgb(0, 0, 0);
+	color: white;
 	position:relative;
 	z-index: 1;
 }
 
 .main mark{
-	color: #4285F4;
+	color: #00ffbb;
 	background: none;
 }
 .main .left{
-	padding: 120px 0 0 120px;
+	padding: 120px 0 0 180px;
 	width: 40%;
 }
 .main .right img{
 	position: absolute;
 	top: 15vh;
-	right: 60px;
+	right: 140px;
 }
 .main div h1{
-	font-size: 44px;
+	font-size: 60px;
 }
 .start{
 	cursor: pointer;
 	width: 144px;
 	height: 40px;
-	color: white;
-	background: #EC5863;
-	border-radius: 5px;
+	color: #212121;
+	background: #00ffbb;
+	border-radius: 20px;
 	border: none;
+	transition: background-color 0.3s ease 0s;
+}
+  
+.start:hover {
+	background-color: #E8F5FF;
 }
 
 .main2{
-	height: 700px;
+	height: 600px;
 	margin: 0;
 	display: flex;
-	color: rgb(0, 0, 0);
+	color: #212121;
 	position:relative;
 	z-index: 1;
-	background-color: white;
+	background-color: #00ffbb;
 }
 .main2 mark{
-	color: #EC5863;
+	color: #ffffff;
 	background: none;
 }
 .main2 .left{
@@ -117,7 +123,7 @@ nav{
 	width: 40%;
 }
 .main2 .right{
-	padding: 160px;
+	padding: 60px 160px;
 }
 .main2 div h1{
 	font-size: 44px;
@@ -126,14 +132,14 @@ nav{
 .main3{
 	height: 700px;
 	margin: 0;
-	color: rgb(0, 0, 0);
+	color: white;
 }
 .main3 .head{
 	text-align: center;
 	padding: 60px;
 }
 .main3 mark{
-	color: #EC5863;
+	color: #00ffbb;
 	background: none;
 }
 .main3 h1{
@@ -146,16 +152,19 @@ nav{
 	display: flex;
 	text-align: center;
 	justify-content: space-around;
-	margin: 0 60px;
+	margin: 0 30px;
 }
 .main3 .split div{
 	padding: 10px;
 	width: 278px;
 	height: 276px;
 	background: #FFFFFF;
-	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	box-shadow: 0px 4px 18px #00ffbb;
 	border-radius: 8px;
 	transition: padding 0.3s ease 0s;
+}
+.main3 .split .split2{
+	z-index: 3;
 }
 .main3 .split div:hover {
 	padding: 30px;
@@ -196,13 +205,15 @@ nav{
   .overlay a {
 	padding: 15px;
 	font-size: 36px;
+	color: white;
+	text-decoration: none;
 	display: block;
 	transition: color 0.3s ease 0s;
   }
   
   .overlay a:hover,
   .overlay a:focus {
-	color: #0088a9;
+	color: #00ffbb;
   }
   .overlay .close {
 	cursor: pointer;
@@ -214,9 +225,9 @@ nav{
   }
   @media screen and (max-height: 450px) {
 	.overlay a {
-	  font-size: 20px;
-	  color: #ffffff;
-  text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+ 	text-decoration: none;
 	}
 	.overlay .close {
 	  font-size: 40px;
@@ -233,11 +244,11 @@ nav{
 	.menu {
 	  display: initial;
 	}
-	header{
+	header,
+	.main3{
 		height: 600px;
 	}
-	.main2,
-	.main3{
+	.main2{
 		height: 500px;
 	}
 
@@ -258,8 +269,9 @@ nav{
 		text-align: center;
 	}
   }
-@media (max-width: 1000px) {
-	.main img {
+@media (max-width: 1050px) {
+	.main img,
+	.main2 .left{
 	  display: none;
 	}
 }
