@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+html{
+	scroll-behavior: smooth;
+}
 body{
 	padding: 0;
 	margin: 0;
@@ -79,12 +82,12 @@ nav{
 	background: none;
 }
 .main .left{
-	padding: 120px 0 0 180px;
+	padding: 60px 0 0 180px;
 	width: 40%;
 }
 .main .right img{
 	position: absolute;
-	top: 15vh;
+	top: 40px;
 	right: 140px;
 }
 .main div h1{
@@ -130,7 +133,7 @@ nav{
 }
 
 .main3{
-	height: 700px;
+	height: 1000px;
 	margin: 0;
 	color: white;
 }
@@ -152,10 +155,9 @@ nav{
 	display: flex;
 	text-align: center;
 	justify-content: space-around;
-	margin: 0 30px;
+	margin: 0 100px 100px 100px;
 }
 .main3 .split div{
-	padding: 10px;
 	width: 278px;
 	height: 276px;
 	background: #FFFFFF;
@@ -163,8 +165,21 @@ nav{
 	border-radius: 8px;
 	transition: padding 0.3s ease 0s;
 }
+.main3 .split .split1{
+	background: url(/Assets/portfolio1.jpg);
+	background-size: contain;
+}
 .main3 .split .split2{
-	z-index: 3;
+	background: url(/Assets/portfolio2.jpg);
+	background-size: contain;
+}
+.main3 .split .split3{
+	background: url(/Assets/portfolio3.jpg);
+	background-size: contain;
+}
+.main3 .split .split4{
+	background: url(/Assets/portfolio4.jpg);
+	background-size: contain;
 }
 .main3 .split div:hover {
 	padding: 30px;
@@ -234,6 +249,10 @@ nav{
 	  top: 15px;
 	  right: 35px;
 	}
+	.main3 .split div{
+		width: 80px;
+		height: 80px;
+	}
   }
   
   @media only screen and (max-width: 800px) {
@@ -268,10 +287,18 @@ nav{
 		padding: 30px;
 		text-align: center;
 	}
+	.main3 .split div{
+		width: 100px;
+		height: 100px;
+	}
   }
 @media (max-width: 1050px) {
 	.main img,
 	.main2 .left{
 	  display: none;
+	}
+	.main3 .split div{
+		width: 200px;
+		height: 200px;
 	}
 }
