@@ -166,19 +166,19 @@ nav{
 	transition: padding 0.3s ease 0s;
 }
 .main3 .split .split1{
-	background: url(/Assets/portfolio1.jpg);
+	background: url(portfolio1.jpg);
 	background-size: contain;
 }
 .main3 .split .split2{
-	background: url(/Assets/portfolio2.jpg);
+	background: url(portfolio2.jpg);
 	background-size: contain;
 }
 .main3 .split .split3{
-	background: url(/Assets/portfolio3.jpg);
+	background: url(portfolio3.jpg);
 	background-size: contain;
 }
 .main3 .split .split4{
-	background: url(/Assets/portfolio4.jpg);
+	background: url(portfolio4.jpg);
 	background-size: contain;
 }
 .main3 .split div:hover {
